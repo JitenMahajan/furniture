@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colors for modern look */
+:root {
+  --primary: #8B5E3C;
+  --secondary: #D2B48C;
+}
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+
+/* Modern button styles */
+button, .btn {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+  box-shadow: 0 8px 32px rgba(139, 94, 60, 0.15);
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px;
+}
