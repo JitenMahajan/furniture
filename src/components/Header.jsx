@@ -5,7 +5,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md relative">
+    <header className="bg-white shadow-md relative z-20">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-gray-800">
           Sunil Furniture
