@@ -26,3 +26,67 @@ button, .btn {
 .container {
   max-width: 1200px;
 }
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles for main.js injected content */
+.logo {
+  width: 120px;
+  height: auto;
+  max-width: 40vw;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.logo.vanilla {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 1rem auto;
+  max-width: 400px;
+}
+
+.read-the-docs {
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Mobile responsive breakpoints */
+@media (max-width: 600px) {
+  .logo {
+    width: 80px;
+    max-width: 60vw;
+  }
+
+  .card {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .read-the-docs {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+}
+

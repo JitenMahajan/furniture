@@ -26,22 +26,22 @@ function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1470&q=80')" }}>
+      <section className="relative bg-cover bg-center h-[70vh] sm:h-[80vh] md:h-screen" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1470&q=80')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4">Find Your Perfect Furniture</h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl">Quality, comfort, and style for your home in Chandigarh.</p>
-          <Link to="/products" className="bg-white text-gray-800 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">Find Your Perfect Furniture</h1>
+          <p className="text-base sm:text-lg md:text-xl mb-8 max-w-2xl px-4">Quality, comfort, and style for your home in Chandigarh.</p>
+          <Link to="/products" className="bg-white text-gray-800 font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-lg hover:bg-gray-200 transition-colors text-sm sm:text-base">
             Shop Now
           </Link>
         </div>
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-12">Featured Products</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

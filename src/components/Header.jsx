@@ -6,8 +6,8 @@ function Header() {
 
   return (
     <header className="bg-white shadow-md relative z-20">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-gray-800">
+      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+        <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-800">
           Sunil Furniture
         </Link>
 
